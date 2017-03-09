@@ -1,0 +1,19 @@
+{
+  "name": "distributed-systems-practice",
+  "version": "1.0.0",
+  "description": "Distributed file system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtoledo23/distributed-systems-practice.git"
+  },
+  "author": "Diego Toledo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtoledo23/distributed-systems-practice/issues"
+  },
+  "homepage": "https://github.com/dtoledo23/distributed-systems-practice#readme"
+}
