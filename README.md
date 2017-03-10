@@ -1,5 +1,5 @@
 # distributed-systems-practice
-Basic Distributed File System
+Simulation Distributed File System
 
 # Run each slave
 1. `git clone`
