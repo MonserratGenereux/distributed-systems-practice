@@ -29,7 +29,7 @@
             </div>
             <div class="carousel-item red white-text" href="#one!">
             <h2>Send File</h2>
-            <formn id="formulario" style="width:50%; margin-left: 25%">
+            <form id="formulario" action="http://10.43.61.180:4000/file" method="POST" enctype="multipart/form-data" style="width:50%; margin-left: 25%">
                 <div class="file-field input-field">
                     <div class="btn">
                         <span>File</span>
@@ -39,14 +39,14 @@
                         <input class="file-path validate" type="text">
                     </div>
                 </div>
-                <button id="sendbutton" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                     <i class="material-icons right">send</i>
                 </button>
             </form>
             </div>
             <div class="carousel-item amber white-text" href="#two!">
             <h2>Get File</h2>
-                <a id="downloadbutton" href="10.43.61.180:4000/download" class="btn waves-effect waves-light" >Download
+                <a id="downloadbutton" href="http://10.43.61.180:4000/file" class="btn waves-effect waves-light" download="">Download
                     <i class="material-icons right">file_download</i>
                 </a>
             </div>
@@ -55,32 +55,8 @@
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script>
 
-            $(document).ready(function(event){
-                $("#sendbutton").click(function(event){
-                    
-                    var file = document.getElementById('fileInput').files[0];
-                    var textType = /text.*/;
-
-                    if (file.type.match(textType)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function(e) {
-                            $.get( "http://10.43.61.180:4000/file", {file: reader.result} );
-                        }
-
-                        reader.readAsText(file);    
-                    } else {
-                        console.log("File not supported!");
-                    }
-                    
-                    event.preventDefault();
-                });
-                $("#downloadbutton").click(function(event){
-
-                });
-            })
-            
              $('.carousel.carousel-slider').carousel({fullWidth: true});
+            
         </script>
     </body>
 </html>
