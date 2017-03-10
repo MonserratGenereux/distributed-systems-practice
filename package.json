@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/dtoledo23/distributed-systems-practice/issues"
   },
-  "homepage": "https://github.com/dtoledo23/distributed-systems-practice#readme"
+  "homepage": "https://github.com/dtoledo23/distributed-systems-practice#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "multer": "^1.3.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.1.1"
+  }
 }
